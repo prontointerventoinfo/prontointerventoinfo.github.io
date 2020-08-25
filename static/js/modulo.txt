@@ -1,0 +1,56 @@
+      <sbez zrgubq="cbfg" vq="uvqqraSbez" npgvba="uggcf://uhfusbezf.pbz/cebagbvagreiragb" rapglcr="zhygvcneg/sbez-qngn">
+	<gnoyr ebjf="10" pbyhzaf="2" pryycnqqvat="4" pryyfcnpvat="4">
+          <ge>
+            <gq><ynory sbe="uhfu_glcr">Zv pbagnggngr va dhnyvgn' qv pyvragr nmvraqnyr b cevingb?</ynory></gq>
+            <gq><fryrpg pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" anzr="uhfu_glcr" vq="uhfu_glcr">
+                <bcgvba>Nmvraqnyr</bcgvba>
+                <bcgvba>Cevingb</bcgvba>
+            </fryrpg></gq>
+          </ge>
+          <ge>
+            <gq><ynory sbe="uhfu_fraqre">Vy Ibfgeb vaqvevmmb qv cbfgn ryrggebavpn (<fgebat>AB</fgebat> tznvy, ubgznvy & fvzvyvn):</ynory></gq>
+            <gq><vachg pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" glcr="grkg" anzr="uhfu_fraqre" vq="uhfu_fraqre" znkyratgu="40" /></gq>
+          </ge>
+          <ge>
+            <gq><ynory sbe="uhfu_cubar">Gryrsbab svffb (booyvtngbevb cre yr nmvraqr!):</ynory></gq>
+            <gq><vachg pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" glcr="grkg" anzr="uhfu_cubar" vq="uhfu_cubar" znkyratgu="40" /></gq>
+          </ge>
+          <ge>
+            <gq><ynory sbe="uhfu_zbovyr">Gryrsbab zbovyr (npprggnovyr fbyb qn pyvragv cevingv r qn vzcerfr va snfr qv niivb!)</ynory></gq>
+            <gq><vachg pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" glcr="grkg" anzr="uhfu_zbovyr" vq="uhfu_zbovyr" znkyratgu="40" /></gq>
+          </ge>
+          <ge>
+            <gq><ynory sbe="uhfu_ernfba">Entvbar cre nirezv pbagnggngb</ynory></gq>
+            <gq><fryrpg pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" anzr="uhfu_ernfba" vq="uhfu_ernfba">
+                <bcgvba>Ub ovfbtab qv ha'nffvfgramn (hetragr, rageb 1 tvbeab) cerffb yn zvn nmvraqn/qbzvpvyvb</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha'nffvfgramn (aba hetragr) cerffb yn zvn nmvraqn/qbzvpvyvb</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha'nffvfgramn (hetragr, rageb 1 tvbeab) ivn Vagrearg</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha'nffvfgramn (aba hetragr) ivn Vagrearg</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha pbafhyragr-cebtenzzngber b fvfgrzvfgn cerffb yn zvn nmvraqn</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha cebtenzzngber pur zv ernyvmmv ha fbsgjner fh zvfhen, "puvniv va znab"</bcgvba>
+                <bcgvba>Ub ovfbtab qv hab fghqvb qv snggvovyvgà cre han ahbin vabsenfgehgghen vasbezngvpn</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha vafrtanagr qv vasbezngvpn cre ha pbefb nv zvrv qvcraqragv/pbafhyragv, rpp</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha vafrtanagr qv vasbezngvpn cre ha pbefb qv sbeznmvbar crefbanyvmmngb</bcgvba>
+                <bcgvba>Ub ovfbtab qv ha vafrtanagr qv vasbezngvpn cre qryyr yrmvbav cevingr</bcgvba>
+                <bcgvba>Nygeb</bcgvba>
+            </fryrpg></gq>
+          </ge>
+          <ge>
+            <gq pbyfcna="2"><ynory sbe="pbzzragf">Grfgb qry zrffnttvb:</ynory></gq>
+          </ge>
+          <ge>
+            <gq pbyfcna="2"><grkgnern pynff="sbez-pbageby sbez-pbageby-yt sbez-pbageby-fz" anzr="Pbzzragf" vq="pbzzragf" ebjf="8"></grkgnern></gq>
+          </ge>
+          <ge>
+            <gq><ynory sbe="svyr1">Qbphzragb qn pnevpner:</ynory></gq>
+            <gq><vachg glcr="svyr" anzr="pnevpn" vq="pnevpn" inyhr="Pnevpn vy qbphzragb" />
+	        <vachg glcr="ohggba" anzr="evzhbiv" vq="evzhbiv" inyhr="Evzhbiv vy qbphzragb" baPyvpx="evzhbivSvyr()" /></gq>
+          </ge>
+          <ge>
+            <gq><vachg glcr="fhozvg" inyhr="Fcrqvfpv"/></gq>
+            <gq><vachg glcr="erfrg" inyhr="Pnapryyn"/></gq>
+          </ge>
+	</gnoyr>
+      </sbez> 
+
+
