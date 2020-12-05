@@ -10,14 +10,14 @@
 
   <meta http-equiv="x-dns-prefetch-control" content="off" />
 
-  <title>Volantini</title>
+  <title>Il protocollo SSH, per connessioni remote</title>
 
   <meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=1, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" /> <!-- -1 ? "Mon, 22 Jul 2002 11:12:01 GMT"? -->
 
   
-  <link rel="canonical" href="http://localhost:4000/volantini/" />
+  <link rel="canonical" href="http://localhost:4000/ssh-protocollo/" />
   
 
   
@@ -135,7 +135,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 barra-titolo">
-      <h2>Volantini</h2>
+      <h2>Il protocollo SSH, per connessioni remote</h2>
     </div>
   </div>
 </div>
@@ -145,10 +145,28 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <center><h3>Clicca <a href="nuova_impresa_20200825_A4_2pdfs.pdf">qui</a> per scaricare il volantino.</h3></center>
+      <p>
+      Il protocollo SSH sta per "Secure SHell", shell sicura, ovvero, permette di stabilire una connessione remota cifrata da e verso un altro dispositivo in rete, che può essere una macchina server, un computer da scrivania (postazione di lavoro), un sistema integrato, un dispositivo mobile, insomma un qualsiasi dispositivo che supporta il protocollo SSH potenzialmente può essere connesso a un altro che supporta lo stesso protocollo.
+      </p>
+      <p>
+      Affinché la connessiona SSH possa avvenire, un dispositivo deve avere installato e in esecuzione un server SSH (server, questa volta uinteso come un programma che svolge il "servizio" di gestire le connessioni remote), che si mette in ascolto di una porta di connessione (generalmente la 22, ma questo può essere cambiato) e, quando una connessione arriva, avviene il tentativo di autenticazione dell'utente. Questo avviane generalmente per mezzo delle credenziali del tipo nome utente/parola segreta, oppure si può utilizzare una coppia di chiavi SSH.
+      </p>
+      <p>
+      Se l'autenticazione va a buon fine, alla macchina che ha richiesto la connessione viene presentata la "shell" del sistema server, un interprete di comandi che vengono impartiti lato dispositivo che ha richiesto la connessione ed eseguiti sul sistema che accetta la connessione.
+      </p>
+      <p>
+      In realtà, SSH è molto più di questo, offre molte altre funzionalità, come trasmissione di file, può ospitare un "cunicolo" per la trasmissione di altri protocolli, ecc. Non mi addentro in questi argomenti, in quanto tutte queste funzionalità sono ben documentate in Rete, qui mi soffermo solo alle funzionalità strettamente necessarie affinché i miei clienti possano essere portati nelle condizioni di eseguire od ospitare una connessione remota, ai fini di assistenza tecnica o ai fini didattici. 
+      </p>
+      <p>
+      Dunque, se per poter stabilire delle connessioni remote c'è bisogno di un programma che supporta il protocollo SSH, è importante assicurarsi che questo programma sia installato sul proprio dispositico. La pagina <a href="/ssh-terminale/">SSH dal terminale</a> tratta questo argomento e offre istruzioni come installare e configurare un programma di connessione SSH.
+      </p>
+      <p>
+      Dall'altra parte, se per poter accettare delle connessioni (per esempio per poter eseguire un intervento di assistenza remota) c'è bisogno di un server SSH, è indispensabile che un server SSH sia installato sul dispositivo previsto per gestire le connessioni remote. La pagina <a href="/ssh-server/">SSH server</a> fornisce delle istruzioni come installare e configurare un server SSH. 
+      </p>
     </div>
   </div>
 </div>
+
 
 
 

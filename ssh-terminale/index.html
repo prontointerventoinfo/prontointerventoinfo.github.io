@@ -10,14 +10,14 @@
 
   <meta http-equiv="x-dns-prefetch-control" content="off" />
 
-  <title>Volantini</title>
+  <title>SSH dal terminale</title>
 
   <meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=1, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" /> <!-- -1 ? "Mon, 22 Jul 2002 11:12:01 GMT"? -->
 
   
-  <link rel="canonical" href="http://localhost:4000/volantini/" />
+  <link rel="canonical" href="http://localhost:4000/ssh-terminale/" />
   
 
   
@@ -135,7 +135,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 barra-titolo">
-      <h2>Volantini</h2>
+      <h2>SSH dal terminale</h2>
     </div>
   </div>
 </div>
@@ -145,10 +145,53 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <center><h3>Clicca <a href="nuova_impresa_20200825_A4_2pdfs.pdf">qui</a> per scaricare il volantino.</h3></center>
+      <p>
+      La pagina <a href="/ssh-protocollo/">Il protocollo SSH</a> riporta le informazioni più essenziali sul protocollo SSH e spiega la necessità di avere un client SSH per poter richiedere una connessione SSH a una macchina predisposta per far girare il server SSH.
+      </p>
+      <p>
+      Sulla maggior parte delel disribuzioni GNU/Linux moderne, un client SSH è installato come uno dei pacchetti predefiniti. Nel caso non sia il caso sul vostro sistema, provare a seguire le seguenti istruzioni.
+      </p>
+      <h3>Installazione sui sistemi GNU/Linux basati su pacchetti deb e apt</h3>
+      <h4>(Debian, Devuan, Ubuntu, Raspberry PI OS, Mint,...)</h4>
+      <p>
+      Prima di tutto, bisogna assicurarsi che l'elenco dei pacchetti disponibili sia aggiornato. (Almeno) una tra le seguenti istruzioni dovrebbe essere sufficente (eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo":
+      </p>
+      <pre>
+      aptitude update
+      apt update
+      apt-get update
+      </pre>
+      <p>
+      Per installare il server SSH provare uno dei seguenti comandi (di nuovo: Eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo"):
+      </p>
+      <pre>
+      aptitude install openssh-client 
+      apt install openssh-client 
+      apt-get install openssh-client 
+      </pre>
+      <h3>Eseguire la connessione remota</h3>
+      <h4>Parametri necessari</h4>
+      <ul>
+        <li>
+	nome_server - nome del server al quale ci si vuole connettere (un nome completamente qualificato in rete) o il suo indirizzo IP
+        </li>
+        <li>
+	porta_tcp - opzionale, da utilizzare solo se la porta è diversa da 22
+        </li>
+        <li>
+	nome_utente - il nome utente sulla macchina alla quale ci si connette (l'utente deve essere registrato su quella macchina)
+        </li>
+      </ul>
+      <p>
+      Da notare che le voci racchiuse tra le parentesi quadre sono quelle opzionali. Le parentesi NON vano digitate, qui sono state scritte per motivi tipografici, di marcatura, per indicare le voci opzionali. Ovviamente, bisogna sostituire i nome fittizi, scritti quei come segnaposti, con parametri di connessione effettivaente validi per il dispositivo al quale ci si connette.
+      </p>
+      <pre>
+      ssh [ -p porta_tcp ] nome_utente@nome_server
+      </pre>
     </div>
   </div>
 </div>
+
 
 
 

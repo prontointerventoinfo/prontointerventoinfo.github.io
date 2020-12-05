@@ -10,14 +10,14 @@
 
   <meta http-equiv="x-dns-prefetch-control" content="off" />
 
-  <title>Volantini</title>
+  <title>HexChat e XChat</title>
 
   <meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=1, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" /> <!-- -1 ? "Mon, 22 Jul 2002 11:12:01 GMT"? -->
 
   
-  <link rel="canonical" href="http://localhost:4000/volantini/" />
+  <link rel="canonical" href="http://localhost:4000/hexchat/" />
   
 
   
@@ -135,7 +135,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 barra-titolo">
-      <h2>Volantini</h2>
+      <h2>HexChat e XChat</h2>
     </div>
   </div>
 </div>
@@ -145,10 +145,42 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <center><h3>Clicca <a href="nuova_impresa_20200825_A4_2pdfs.pdf">qui</a> per scaricare il volantino.</h3></center>
+      <h3>Installazione sui sistemi GNU/Linux basati su pacchetti deb e apt</h3>
+      <h4>(Debian, Devuan, Ubuntu, Raspberry PI OS, Mint,...)</h4>
+      <p>
+      Prima di tutto, bisogna assicurarsi che l'elenco dei pacchetti disponibili sia aggiornato. (Almeno) una tra le seguenti istruzioni dovrebbe essere sufficente (eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo":
+      </p>
+      <pre>
+      aptitude update
+      apt update
+      apt-get update
+      </pre>
+      <p>
+      Per installare il HexChat (in alternativa: XChat; dipende da quello che avete disponibile tra i pacchetti della vostra distribuzione GNU/Linux) provare uno dei seguenti comandi (di nuovo: Eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo"):
+      </p>
+      <pre>
+      aptitude install hexchat
+      apt install hexchat
+      apt-get install hexchat
+      </pre>
+      <p>
+      (o, in alternativa XChat).
+      </p>
+      <h3>Configurazione di HexChat o di XChat</h3>
+      <h4>Connessione alla rete IRC di FreeNode e al canale #prontointervento</h4>
+      <p>
+      Al momento dell'avvio del programma, ovrebbe essere presentata la lista delle reti disponibili. Cercare nella lista presentata e selezionare "freenode", premere il pulsante "Connetti" e, quando si presenta la proposta del canale di connessione, inserire "#prontointervento" (senza virgolette). Ed è tutto.
+      </p>
+      <p>
+      Nel caso la lista delle reti non parta subito, la trovate come sottovoce del menu "HexChat" (o XChat), "Lista delle reti". E seguite il procedimento del paragrafo precedente.
+      </p>
+      <p>
+      Se ci sono problemi, potete utilizzare l'interfaccia HTML seguendo <a href="/messaggi/">questo indirizzo del mio sito</a>.
+      </p>
     </div>
   </div>
 </div>
+
 
 
 

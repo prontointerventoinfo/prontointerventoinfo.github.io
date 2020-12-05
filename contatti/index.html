@@ -164,32 +164,7 @@
 
       <div id="prova"><hr /><span style="color: red;">ATTENZIONE: Per poter visualizzare e compilare il modulo, dovete abilitare il JavaScript!</span><hr /></div>
 
-      <script type="text/javascript">
-	function rimuoviFile() {
-	  //alert("OK")
-	  document.getElementById('carica').value = ''
-	}
-
-        function read() {  
-          var txtFile = new XMLHttpRequest();
-          txtFile.open("GET", "/static/js/modulo.txt", true);
-          txtFile.onreadystatechange = function() {  
-            if( txtFile.readyState === 4 ) {
-              // Makes sure the document is ready to parse.  
-              if( txtFile.status === 200 ) {  
-                // Makes sure it's found the file.
-                var got = txtFile.responseText
-                var got1 = got.replace( /[a-zA-Z]/g,
-                    function(c) { return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26); }
-                );
-                document.getElementById( "prova" ).innerHTML = got1;
-              }
-            }  
-          }  
-          txtFile.send(null)
-        }
-        read();
-      </script>
+      <script type="text/javascript" src=/static/js/prova.js></script>
 
     </div>
   </div>
@@ -219,15 +194,83 @@
 	  <a href="/contatti/">Modulo contatti</a>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+	  <a href="/messaggi/">Messaggi immediati</a>
+        </div>
+      </div>
+      
       
     </div>
     <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
       <div class="row">
         <div class="col">
-		&nbsp;
-      
+	  <strong>PROTOCOLLI UTILIZZATI</strong>
         </div>
       </div>
+      
+      
+      
+      
+      
+      <div class="row">
+        <div class="col">
+	  <strong>Connessioni remote</strong>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+	  <a href="/ssh-protocollo/">Il protocollo SSH</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
+      <div class="row">
+        <div class="col">
+	  <strong>ISTRUZIONI PER PROGRAMMI</strong>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+	  <strong>Comunicazioni</strong>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+	  <a href="/hexchat/">HexChat / XChat</a>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+    <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
+      <div class="row">
+        <div class="col">
+	  <strong>ASSISTENZA REMOTA</strong>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+	  <a href="/ssh-server/">Il server SSH</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+	  <a href="/ssh-terminale/">SSH dal terminale</a>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+	  <strong>&nbsp;</strong>
+        </div>
+      </div>
+      
+      
+      
     </div>
     <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
       <div class="row">
@@ -238,27 +281,14 @@
       <div class="row">
         <div class="col">
 	  <a href="/nuove-imprese/">Nuove imprese</a>
-      
         </div>
       </div>
-    </div>
-    <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
-      <div class="row">
-        <div class="col">
-		&nbsp;
       
-        </div>
-      </div>
     </div>
     <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
-      <div class="row">
-        <div class="col">
-		&nbsp;
       
-        </div>
-      </div>
-    </div>
-    <div class="col col-12 col-sm-6 col-md-2 col-lg-2 col-xl-2 text-left"> 
+      
+      
       <div class="row">
         <div class="col">
 	  <strong>ALTRO</strong>

@@ -10,14 +10,14 @@
 
   <meta http-equiv="x-dns-prefetch-control" content="off" />
 
-  <title>Volantini</title>
+  <title>Il server SSH</title>
 
   <meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=1, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" /> <!-- -1 ? "Mon, 22 Jul 2002 11:12:01 GMT"? -->
 
   
-  <link rel="canonical" href="http://localhost:4000/volantini/" />
+  <link rel="canonical" href="http://localhost:4000/ssh-server/" />
   
 
   
@@ -135,7 +135,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 barra-titolo">
-      <h2>Volantini</h2>
+      <h2>Il server SSH</h2>
     </div>
   </div>
 </div>
@@ -145,10 +145,47 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <center><h3>Clicca <a href="nuova_impresa_20200825_A4_2pdfs.pdf">qui</a> per scaricare il volantino.</h3></center>
+      <p>
+      Come già spiegato nella pagina <a href="/ssh-protocollo/">Il protocollo SSH</a>, per poter stabilire o ricevere una connessione SSH, sulla macchina che deve poter accettare connessioni remote deve essere installato il server SSH, e sul dispositivo dal quale la connessione deve partire bisogna che si ainstallato un client SSH. L'installazione dipende dal sistema operativo e da altri fattori ed esulerebbe dai scopi di questa semplce paginetta delle istruzioni. Qui indico solo alcune informazioni più comuni per la maggior parte dei sistemi operativi (da me) supportati. Nel caso si dovesse verificare qualche probelma di configurazione più specifico, invito il cliente a contattarmi utilizzando uno dei canali messi a disposizione e cercherò di risolvere il suo problema.
+      </p>
+      <h3>Installazione sui sistemi GNU/Linux basati su pacchetti deb e apt</h3>
+      <h4>(Debian, Devuan, Ubuntu, Raspberry PI OS, Mint,...)</h4>
+      <p>
+      Prima di tutto, bisogna assicurarsi che l'elenco dei pacchetti disponibili sia aggiornato. (Almeno) una tra le seguenti istruzioni dovrebbe essere sufficente (eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo":
+      </p>
+      <pre>
+      aptitude update
+      apt update
+      apt-get update
+      </pre>
+      <p>
+      Per installare il server SSH provare uno dei seguenti comandi (di nuovo: Eseguire come utente "root", oppure far precedere il relativo comando dal comando "sudo"):
+      </p>
+      <pre>
+      aptitude install openssh-server 
+      apt install openssh-server 
+      apt-get install openssh-server 
+      </pre>
+      <p>
+      Se l'installazione è andata a buon fine, il server dovrebbe essere installato e in ascolto all aporta 22. Se volete cambiare la porta, dovete modificare la voce "Port" del file /etc/ssh/sshd_config e poi riavviare il server SSH (attenzione, non la macchina fisica, solo il programma server è sufficente riavviare).
+      </p>
+      <p>Per riavviare il programma server (o per avviare nel caso non fosse partito automaticamente), utilizzare uno dei seguenti comandi (come "root" o con "sudo", questa è l'ultima volta che lo ripeto)
+      </p>
+      <pre>
+      systemctl restart ssh
+      service ssh restart
+      /etc/init.d/ssh restart
+      </pre>
+      <p>
+      Assicurarsi anche che il firewall non blocchi la porta 22 (o quella configurata, se configurata una porta alternativa). Nel caso si presentasse questo problema, prego, contattatemi a uno dei recapiti indicati in fondo di questa pagina.
+      </p>
+      <p>
+      L'installazione del server SSH comporta anche l'installazione del client SSH (il contrario non è garantiro).
+      </p>
     </div>
   </div>
 </div>
+
 
 
 
